@@ -6,7 +6,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>COGIP</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="GOGIP-app/assets/img/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="COGIP-app/css/styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
 
@@ -32,7 +32,7 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Invoices</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Companies</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contacts</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="connexion.html">Connexion</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="GOGIP-app/connexion.html">Connexion</a></li>
             </ul>
         </div>
     </div>
