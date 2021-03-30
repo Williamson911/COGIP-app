@@ -10429,6 +10429,13 @@ section#contact {
   background-repeat: no-repeat;
   background-position: center;
 }
+
+section#connect {
+  background-color: #212529;
+  background-image: url("../assets/img/connect.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 section#contact .section-heading {
   color: #fff;
 }
