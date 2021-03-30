@@ -1,14 +1,12 @@
 <?php
 declare(strict_types = 1);
 
-use Becode\MVCBoilerplate\model\CompaniesManager;
-
 require_once('./Model/CompaniesManager.php');
 
-class CompaniesController
+class HomepageController
 {
     //render function with both $_GET and $_POST vars available if it would be needed.
-    public function render(array $GET, array $POST) 
+    public function render()
     {
 
         //this is just example code, you can remove the line below

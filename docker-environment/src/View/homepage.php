@@ -7,7 +7,7 @@ Anything complex should be calculated in the model -->
     <ol>
     	<?php 
     		foreach ($companies->getCompanies() as $key => $company) { ?>
-    		<li><p><?php echo $company['company_name']?></p></li>	
+    		<li><p><?php echo $company['Name']?></p></li>	
     		
     	<?php } ?>
     </ol>

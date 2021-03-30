@@ -1,8 +1,6 @@
 <?php
 declare(strict_types = 1);
 
-use Becode\MVCBoilerplate\model\CompaniesManager;
-
 require_once('./Model/CompaniesManager.php');
 
 
@@ -15,6 +13,6 @@ class CompanyController
         // then the view will actually display them.
 
         //load the view
-        require './View/single-company.php';
+        header('Location: ./View/single-company.php?company_id=' . $id);
     }
 }
