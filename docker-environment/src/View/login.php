@@ -18,7 +18,7 @@
 </head>
 <body id="page-top">
 <?php
-require('config.php');
+require('COGIP-app/assets/mail/config.php');
 session_start();
 if (isset($_POST['username'])){
   $username = stripslashes($_REQUEST['username']);
