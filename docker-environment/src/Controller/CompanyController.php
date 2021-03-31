@@ -1,18 +1,30 @@
 <?php
 declare(strict_types = 1);
 
-require_once('./Model/CompaniesManager.php');
-
+require_once('./Model/CompanyManager.php');
 
 class CompanyController
 {
     //render function with both $_GET and $_POST vars available if it would be needed.
-    public function render(array $GET, array $POST)
+    public function render()
     {
-        //you should not echo anything inside your controller - only assign vars here
-        // then the view will actually display them.
+
+        $companies = new CompanyManager();
+
+        $view = './View/companies.php';
+
+        if (isset($_GET['id'])) {
+            if (ctype_digit($_GET['id'])) {
+                $detailCompanies = $companies->getDetails($_GET['id']);
+                $employees = $companies->getEmployees($_GET['id']);
+                $invoices = $companies->getInvoices($_GET['id']);
+                $view = './View/detailCompany.php';
+            } else {
+                echo 'Error';
+            }
+        }
 
         //load the view
-        header('Location: ./View/single-company.php?company_id=' . $id);
+        require $view;
     }
 }

@@ -9,5 +9,11 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to my site</h1>
+        <h1>Welcome to the COGIP!</h1>
+            <a href="/index.php">Home</a>
+            <a href="/index.php?page=companies">Companies</a>
+            <a href="/index.php?page=invoices">Invoices</a>
+            <a href="/index.php?page=contacts">Contacts</a>
+            <a href="/index.php?page=providers">Providers</a>
+            <a href="/index.php?page=clients">Clients</a>
     </header>
