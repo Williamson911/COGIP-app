@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -128,14 +127,3 @@
 <script src="js/scripts.js"></script>
 </body>
 </html>
-
-
-
-
-<!-- this is the view, try to put only simple if's and loops here.
-Anything complex should be calculated in the model -->
-<section>
-
-
-
-</section>
