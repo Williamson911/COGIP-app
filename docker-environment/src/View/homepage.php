@@ -32,7 +32,7 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Invoices</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Companies</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contacts</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="GOGIP-app/connexion.html">Connexion</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="docker-environment/src/View/login.php">Connexion</a></li>
             </ul>
         </div>
     </div>
@@ -80,11 +80,12 @@
         <div class="text-center">
             <h2 class="section-heading text-uppercase">COGIP : Companies Directory</h2>
             <ol>
+                <li>
                 <?php
-                foreach ($companies->getCompanies() as $key => $company) { ?>
-                    <li><p><?php echo $company['Name']?></p></li>
-
-                <?php } ?>
+                foreach ($companies->getCompanies() as $key => $company) {
+                    <echo $company['Name']
+                } ?>
+                </li>
             </ol>
         </div>
     </div>
