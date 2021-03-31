@@ -8,7 +8,7 @@ require 'Model/CompaniesManager.php';
 require 'Controller/HomepageController.php';
 
 //Your index is your Router. You could write a simple IF here based on some $_GET or $_POST vars, to choose your controller
-
+require 'routeur/config.php';
 $controller = new HomepageController();
 
 // if(isset($_GET['company']) && $_GET['company'] === 'company') {
