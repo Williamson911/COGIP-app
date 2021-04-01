@@ -28,11 +28,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ml-auto">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#invoices">Invoices</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#companies">Companies</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contacts">Contacts</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="login.php">Connexion</a></li>
+                <li class="nav-item"><a class="nav-link" href="homepage.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="invoices.php">Invoices</a></li>
+                <li class="nav-item"><a class="nav-link" href="companies.php">Companies</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.php">Contacts</a></li>
+                <li class="nav-item"><a class="nav-link" href="clients.php">Clients</a></li>
+                <li class="nav-item"><a class="nav-link" href="providers.php">Providers</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.php">Connexion</a></li>
             </ul>
         </div>
     </div>
@@ -41,35 +43,15 @@
 <header class="masthead">
     <div class="container">
         <div class="masthead-heading text-uppercase">Welcome To The COGIP!</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#home">Tell Me More</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#lastinvoices">Tell Me More</a>
     </div>
 </header>
-<!-- Home-->
-<section class="page-section" id="home">
+
+<!-- Invoices -->
+<section class="page-section bg-light" id="lastinvoices">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Bonjour!</h2>
-        </div>
-        <div class="row text-center">
-
-            <div class="col-md-3">
-                <h3> Last Invoice :</h3>
-            </div>
-
-            <div class="col-md-3">
-                <h3> Last Contacts :</h3>
-            </div>
-
-            <div class="col-md-3">
-                <h3> Last Companies :</h3>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Invoices -->
-<section class="page-section bg-light" id="invoices">
-    <div class="container">
-        <div class="text-center">
             <h2 class="section-heading text-uppercase">COGIP : List of Invoices</h2>
         </div>
         <div>
@@ -95,7 +77,7 @@
     </div>
 </section>
 <!-- Companies -->
-<section class="page-section" id="companies">
+<section class="page-section" id="lastcompanies">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">COGIP : Companies Directory</h2>
@@ -128,7 +110,7 @@
 </section>
 
 <!-- Contact-->
-<section class="page-section" id="contacts">
+<section class="page-section" id="lastcontacts">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Contact Directory</h2>
