@@ -14,11 +14,11 @@
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/styles.css" rel="stylesheet" />
+    <link href="./css/styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
 <?php
-require('COGIP-app/assets/mail/config.php');
+require('./assets/mail/config.php');
 session_start();
 if (isset($_POST['username'])){
   $username = stripslashes($_REQUEST['username']);
