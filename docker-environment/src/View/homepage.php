@@ -41,7 +41,7 @@
 <header class="masthead">
     <div class="container">
         <div class="masthead-heading text-uppercase">Welcome To The COGIP!</div>
-        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#home">Tell Me More</a>
     </div>
 </header>
 <!-- Home-->
