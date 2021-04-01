@@ -51,7 +51,6 @@
 <section class="page-section bg-light" id="contact">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">Bonjour!</h2>
             <h2 class="section-heading text-uppercase">COGIP : List of Contacts</h2>
         </div>
         <div>
