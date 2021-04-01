@@ -1,7 +1,7 @@
 <?php
 declare(strict_types = 1);
 
-require_once('./Model/CompaniesManager.php');
+require_once('./Model/HomepageManager.php');
 
 class HomepageController
 {
@@ -9,11 +9,11 @@ class HomepageController
     public function render()
     {
 
-        //this is just example code, you can remove the line below
-        $companies = new CompaniesManager();
+        $invoices = new HomeInvoicesManager();
 
-        //you should not echo anything inside your controller - only assign vars here
-        // then the view will actually display them.
+        $contacts = new HomeContactsManager();
+
+        $companies = new HomeCompaniesManager();
 
         //load the view
         require('./View/homepage.php');
