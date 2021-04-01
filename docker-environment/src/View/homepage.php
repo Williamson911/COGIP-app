@@ -28,10 +28,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ml-auto">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Home</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Invoices</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Companies</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contacts</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#invoices">Invoices</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#companies">Companies</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contacts">Contacts</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="docker-environment/src/View/login.php">Connexion</a></li>
             </ul>
         </div>
@@ -45,7 +45,7 @@
     </div>
 </header>
 <!-- Home-->
-<section class="page-section" id="services">
+<section class="page-section" id="home">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Bonjour!</h2>
@@ -67,7 +67,7 @@
     </div>
 </section>
 <!-- Invoices -->
-<section class="page-section bg-light" id="portfolio">
+<section class="page-section bg-light" id="invoices">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">COGIP : List of Invoices</h2>
@@ -75,7 +75,7 @@
     </div>
 </section>
 <!-- Companies -->
-<section class="page-section" id="about">
+<section class="page-section" id="companies">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">COGIP : Companies Directory</h2>
@@ -91,7 +91,7 @@
 </section>
 
 <!-- Contact-->
-<section class="page-section" id="contact">
+<section class="page-section" id="contacts">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Contact Directory</h2>
