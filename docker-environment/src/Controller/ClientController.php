@@ -3,21 +3,21 @@ declare(strict_types = 1);
 
 require_once('./Model/CompanyManager.php');
 
-class CompanyController
+class ClientController
 {
     //render function with both $_GET and $_POST vars available if it would be needed.
     public function render()
     {
 
-        $companies = new CompanyManager();
+        $clients = new CompanyManager();
 
-        $view = './View/companies.php';
+        $view = './View/clients.php';
 
         if (isset($_GET['id'])) {
             if (ctype_digit($_GET['id'])) {
-                $detailCompanies = $companies->getDetails($_GET['id']);
-                $employees = $companies->getEmployees($_GET['id']);
-                $invoices = $companies->getInvoices($_GET['id']);
+                $detailCompanies = $clients->getDetails($_GET['id']);
+                $employees = $clients->getEmployees($_GET['id']);
+                $invoices = $clients->getInvoices($_GET['id']);
                 $view = './View/detailCompany.php';
             } else {
                 $view = './View/error404.php';
