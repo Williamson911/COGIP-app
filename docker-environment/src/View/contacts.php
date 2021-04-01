@@ -40,7 +40,7 @@
     </div>
 </nav>
 <!-- Masthead-->
-<header class="masthead">
+<header class="masthead contact">
     <div class="container">
         <div class="masthead-heading text-uppercase"Contact Directory</div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Tell Me More</a>

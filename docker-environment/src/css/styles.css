@@ -10125,6 +10125,57 @@ header.masthead {
   background-position: center center;
   background-size: cover;
 }
+
+header.masthead {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #fff;
+}
+.homepage { 
+  background-image: url("../assets/img/marc-kleen-N22Vj73LHSY-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.invoices {
+  background-image: url("../assets/img/invoices.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.companies {
+  background-image: url("../assets/img/companies.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.contacts {
+  background-image: url("../assets/img/contact.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.clients {
+  background-image: url("../assets/img/clients.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+.providers {
+  background-image: url("../assets/img/providers.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;

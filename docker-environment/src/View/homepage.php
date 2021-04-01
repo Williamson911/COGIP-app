@@ -40,7 +40,7 @@
     </div>
 </nav>
 <!-- Masthead-->
-<header class="masthead">
+<header class="masthead homepage">
     <div class="container">
         <div class="masthead-heading text-uppercase">Welcome To The COGIP!</div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#lastinvoices">Tell Me More</a>

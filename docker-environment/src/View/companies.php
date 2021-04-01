@@ -40,7 +40,7 @@
     </div>
 </nav>
 <!-- Masthead-->
-<header class="masthead">
+<header class="masthead companies">
     <div class="container">
         <div class="masthead-heading text-uppercase"Companies Directory</div>
     <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#companies">Tell Me More</a>
