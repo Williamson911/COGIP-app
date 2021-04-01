@@ -1,0 +1,16 @@
+
+#Below is the server configuration
+
+RewriteEngine On              # lancer le moteur d'écriture url, à partir de..
+
+RewriteCond %{REQUEST_FILENAME} !-d # si dossier inexistant continue de faire la requête
+RewriteCond %{REQUEST_FILENAME} !-f # si fichier inexistant continue de faire la requête
+
+#RewriteRule ^(.*)$ config.php url=$1 [NC,L]
+RewriteRule ^ config/([0-9]+)$ config.php id=$1 [NC,L]
+
+
+
+# condition pour réecrire une règle,regex pour signaler qu'on veut tout prendre
+
+
