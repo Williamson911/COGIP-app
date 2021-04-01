@@ -32,7 +32,7 @@
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#invoices">Invoices</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#companies">Companies</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contacts">Contacts</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="docker-environment/src/View/login.php">Connexion</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="login.php">Connexion</a></li>
             </ul>
         </div>
     </div>
@@ -72,6 +72,26 @@
         <div class="text-center">
             <h2 class="section-heading text-uppercase">COGIP : List of Invoices</h2>
         </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Invoice Number</th>
+                    <th>Dates</th>
+                    <th>Company</th>
+                </tr>
+                <tr>
+                    <td><?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
+                            <p><?php echo $invoice['InvoiceNumber']?></p><?php } ?>
+                    </td>
+                    <td><?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
+                            <p><?php echo $invoice['InvoiceDate']?></p><?php } ?>
+                    </td>
+                    <td><?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
+                            <p><?php echo $invoice['Name']?></p><?php } ?>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
 </section>
 <!-- Companies -->
@@ -79,13 +99,30 @@
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">COGIP : Companies Directory</h2>
-            <ol>
-                <?php
-                foreach ($companies->getCompanies() as $key => $company) { ?>
-                    <li><p><?php echo $company['Name']?></p></li>
-
-                <?php } ?>
-            </ol>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>VAT</th>
+                    <th>Country</th>
+                    <th>Type</th>
+                </tr>
+                <tr>
+                    <td><?php foreach ($companies->getCompanies() as $key => $company) { ?>
+                            <p><?php echo $company['Name']?></p><?php } ?>
+                    </td>
+                    <td><?php foreach ($companies->getCompanies() as $key => $company) { ?>
+                            <p><?php echo $company['VATNumber']?></p><?php } ?>
+                    </td>
+                    <td><?php foreach ($companies->getCompanies() as $key => $company) { ?>
+                            <p><?php echo $company['Country']?></p><?php } ?>
+                    </td>
+                    <td><?php foreach ($companies->getCompanies() as $key => $company) { ?>
+                            <p><?php echo $company['Type']?></p><?php } ?>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </section>
@@ -95,6 +132,26 @@
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Contact Directory</h2>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>e-mail</th>
+                    <th>Company</th>
+                </tr>
+                <tr>
+                    <td><?php foreach ($contacts->getContacts() as $key => $contact) { ?>
+                            <p><?php echo $contact['FirstName'] . ' ' . $contact['LastName']?></p><?php } ?>
+                    </td>
+                    <td><?php foreach ($contacts->getContacts() as $key => $contact) { ?>
+                            <p><?php echo $contact['Email']?></p><?php } ?>
+                    </td>
+                    <td><?php foreach ($contacts->getContacts() as $key => $contact) { ?>
+                            <p><?php echo $contact['CompanyName']?></p><?php } ?>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </section>
