@@ -42,7 +42,7 @@
 <!-- Masthead-->
 <header class="masthead clients">
     <div class="container">
-        <div class="masthead-heading text-uppercase"Contact Directory</div>
+        <div class="masthead-heading text-uppercase"Client Directory</div>
     <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Tell Me More</a>
     </div>
 </header>
@@ -61,15 +61,15 @@
                     <th>Country</th>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="pl-2">
                         <?php foreach ($clients->getClients() as $key => $client) { ?>
                             <p><a href="/index.php?page=clients&id=<?=$client['Id']?>"><?= $client['Name']?></a></p><?php } ?>
                     </td>
-                    <td>
+                    <td class="pl-2">
                         <?php foreach ($clients->getClients() as $key => $client) { ?>
                             <p><?php echo $client['VATNumber']?></p><?php } ?>
                     </td>
-                    <td>
+                    <td class="pl-2">
                         <?php foreach ($clients->getClients() as $key => $client) { ?>
                             <p><?php echo $client['Country']?></p><?php } ?>
                     </td>
