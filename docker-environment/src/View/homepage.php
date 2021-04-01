@@ -52,7 +52,7 @@
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Bonjour!</h2>
-            <h2 class="section-heading text-uppercase">COGIP : List of Invoices</h2>
+            <h2 class="section-heading text-uppercase">Last Invoices</h2>
         </div>
         <div>
             <table>
@@ -80,7 +80,7 @@
 <section class="page-section" id="lastcompanies">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">COGIP : Companies Directory</h2>
+            <h2 class="section-heading text-uppercase"Last Companies</h2>
         </div>
         <div>
             <table>
@@ -113,7 +113,7 @@
 <section class="page-section" id="lastcontacts">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">Contact Directory</h2>
+            <h2 class="section-heading text-uppercase">Last Contacts</h2>
         </div>
         <div>
             <table>
