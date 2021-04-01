@@ -62,11 +62,11 @@
                     <th>Type</th>
                 </tr>
                 <tr>
-                    <td class="pl2"><?php foreach ($contacts->getContact() as $key => $contact) { ?>
+                    <td class="pl-2"><?php foreach ($contacts->getContact() as $key => $contact) { ?>
                             <p><a href="/index.php?page=contacts&id=<?=$contact['Id']?>"><?= $contact['FirstName'] . ' ' . $contact['LastName']?></a></p><?php } ?>
-                    <td class="pl2"><?php foreach ($contacts->getContact() as $key => $contact) { ?>
+                    <td class="pl-2"><?php foreach ($contacts->getContact() as $key => $contact) { ?>
                             <p><?php echo $contact['Email']?></p><?php } ?></td>
-                    <td class="pl2"><?php foreach ($contacts->getContact() as $key => $contact) { ?>
+                    <td class="pl-2"><?php foreach ($contacts->getContact() as $key => $contact) { ?>
                             <p><?php echo $contact['CompanyName']?></p><?php } ?></td>
                 </tr>
             </table>

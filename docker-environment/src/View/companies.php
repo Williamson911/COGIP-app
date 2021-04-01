@@ -65,15 +65,15 @@
                     <th>Country</th>
                 </tr>
                 <tr>
-                    <td class="pl2">
+                    <td class="pl-2">
                         <?php foreach ($companies->getClients() as $key => $client) { ?>
                             <p><a href="/index.php?page=companies&id=<?=$client['Id']?>"><?= $client['Name']?></a></p><?php } ?>
                     </td>
-                    <td class="pl2">
+                    <td class="pl-2">
                         <?php foreach ($companies->getClients() as $key => $client) { ?>
                             <p><?php echo $client['VATNumber']?></p><?php } ?>
                     </td>
-                    <td class="pl2">
+                    <td class="pl-2">
                         <?php foreach ($companies->getClients() as $key => $client) { ?>
                             <p><?php echo $client['Country']?></p><?php } ?>
                     </td>
@@ -89,15 +89,15 @@
                     <th>Country</th>
                 </tr>
                 <tr>
-                    <td class="pl2">
+                    <td class="pl-2">
                         <?php foreach ($companies->getProviders() as $key => $provider) { ?>
                             <p><a href="/index.php?page=companies&id=<?=$provider['Id']?>"><?= $provider['Name']?></a></p><?php } ?>
                     </td>
-                    <td class="pl2">
+                    <td class="pl-2">
                         <?php foreach ($companies->getProviders() as $key => $provider) { ?>
                             <p><?php echo $provider['VATNumber']?></p><?php } ?>
                     </td>
-                    <td class="pl2">
+                    <td class="pl-2">
                         <?php foreach ($companies->getProviders() as $key => $provider) { ?>
                             <p><?php echo $provider['Country']?></p><?php } ?>
                     </td>
