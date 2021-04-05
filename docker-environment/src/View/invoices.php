@@ -44,7 +44,7 @@
                 </tr>
                 <tr>
                     <td class="pl-2"><?php foreach ($invoices->getInvoice() as $key => $invoice) { ?>
-                            <p><a href="/index.php?page=invoices&id=<?=$invoice['InvoiceNumber']?>"><?= $invoice['InvoiceNumber']?></a></p><?php } ?>
+                            <p><a href="/invoices/<?=$invoice['InvoiceNumber']?>"><?= $invoice['InvoiceNumber']?></a></p><?php } ?>
                     <td class="pl-2"><?php foreach ($invoices->getInvoice() as $key => $invoice) { ?>
                             <p><?php echo $invoice['InvoiceDate']?></p><?php } ?></td>
                     <td class="pl-2"><?php foreach ($invoices->getInvoice() as $key => $invoice) { ?>

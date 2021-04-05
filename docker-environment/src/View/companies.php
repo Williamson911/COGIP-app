@@ -23,7 +23,7 @@
 <!-- Masthead-->
 <header class="masthead companies">
     <div class="container">
-        <div class="masthead-heading text-uppercase"Companies Directory</div>
+        <div class="masthead-heading text-uppercase">Companies Directory</div>
     <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#companies">Tell Me More</a>
     </div>
 </header>
@@ -48,7 +48,7 @@
                 <tr>
                     <td class="pl-2">
                         <?php foreach ($companies->getClients() as $key => $client) { ?>
-                            <p><a href="/companies<?=$client['Id']?>"><?= $client['Name']?></a></p><?php } ?>
+                            <p><a href="/companies/<?=$client['Id']?>"><?= $client['Name']?></a></p><?php } ?>
                     </td>
                     <td class="pl-2">
                         <?php foreach ($companies->getClients() as $key => $client) { ?>
@@ -72,7 +72,7 @@
                 <tr>
                     <td class="pl-2">
                         <?php foreach ($companies->getProviders() as $key => $provider) { ?>
-                            <p><a href="/index.php?page=companies&id=<?=$provider['Id']?>"><?= $provider['Name']?></a></p><?php } ?>
+                            <p><a href="/companies/<?=$provider['Id']?>"><?= $provider['Name']?></a></p><?php } ?>
                     </td>
                     <td class="pl-2">
                         <?php foreach ($companies->getProviders() as $key => $provider) { ?>

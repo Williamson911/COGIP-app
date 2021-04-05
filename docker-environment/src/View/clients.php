@@ -23,7 +23,7 @@
 <!-- Masthead-->
 <header class="masthead clients">
     <div class="container">
-        <div class="masthead-heading text-uppercase"Client Directory</div>
+        <div class="masthead-heading text-uppercase">Client Directory</div>
     <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Tell Me More</a>
     </div>
 </header>
@@ -44,7 +44,7 @@
                 <tr>
                     <td class="pl-2">
                         <?php foreach ($clients->getClients() as $key => $client) { ?>
-                            <p><a href="/index.php?page=clients&id=<?=$client['Id']?>"><?= $client['Name']?></a></p><?php } ?>
+                            <p><a href="/clients/<?=$client['Id']?>"><?= $client['Name']?></a></p><?php } ?>
                     </td>
                     <td class="pl-2">
                         <?php foreach ($clients->getClients() as $key => $client) { ?>

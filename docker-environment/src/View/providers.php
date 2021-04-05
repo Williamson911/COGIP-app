@@ -44,7 +44,7 @@
                 <tr>
                     <td class="pl-2">
                         <?php foreach ($providers->getProviders() as $key => $provider) { ?>
-                            <p><a href="/index.php?page=providers&id=<?=$provider['Id']?>"><?= $provider['Name']?></a></p><?php } ?>
+                            <p><a href="/providers/<?=$provider['Id']?>"><?= $provider['Name']?></a></p><?php } ?>
                     </td>
                     <td class="pl-2">
                         <?php foreach ($providers->getProviders() as $key => $provider) { ?>
