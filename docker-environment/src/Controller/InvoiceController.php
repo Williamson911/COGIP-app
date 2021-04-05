@@ -7,18 +7,19 @@ class InvoiceController
 {
     //render function with both $_GET and $_POST vars available if it would be needed.
     public function render()
-    {
+    {       
+        global $url;
 
         $invoices = new InvoiceManager();
 
         $view = './View/invoices.php';
 
-        if (isset($_GET['id'])) {
-            if (ctype_digit($_GET['id'])) {
-                $detailInvoice = $invoices->getDetails($_GET['id']);
-                $view = './View/detailInvoice.php';
+        if (isset($url[1])) {
+            if (ctype_digit($url['1'])) {
+                $detailInvoice = $invoices->getDetails($url[1]); //renvoi vers la fonction mySql qui est dans modèle.
+                $view =   $_SERVER['DOCUMENT_ROOT'] . '/View/detailInvoice.php';
             } else {
-                $view = './View/error404.php';
+                $view = '/View/error404.php';
             }
         }
 
