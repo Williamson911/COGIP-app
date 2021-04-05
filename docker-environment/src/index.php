@@ -14,15 +14,15 @@ require 'Controller/ClientController.php';
 
 $controller = new HomepageController();
 
-if(isset($_GET['page']) && $_GET['page'] === 'companies') {
+if(isset($_GET[1]) && $_GET['1'] === 'companies') {
     $controller = new CompanyController();
-} elseif(isset($_GET['page']) && $_GET['page'] === 'invoices') {
+} elseif(isset($_GET['1']) && $_GET['1'] === 'invoices') {
     $controller = new InvoiceController();
-} elseif(isset($_GET['page']) && $_GET['page'] === 'contacts') {
+} elseif(isset($_GET['1']) && $_GET['1'] === 'contacts') {
     $controller = new ContactController();
-} elseif(isset($_GET['page']) && $_GET['page'] === 'providers') {
+} elseif(isset($_GET['1']) && $_GET['1'] === 'providers') {
     $controller = new ProviderController();
-} elseif(isset($_GET['page']) && $_GET['page'] === 'clients') {
+} elseif(isset($_GET['1']) && $_GET['1'] === 'clients') {
     $controller = new ClientController();
 }
 

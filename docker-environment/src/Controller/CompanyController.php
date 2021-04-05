@@ -13,11 +13,11 @@ class CompanyController
 
         $view = './View/companies.php';
 
-        if (isset($_GET['id'])) {
-            if (ctype_digit($_GET['id'])) {
-                $detailCompanies = $companies->getDetails($_GET['id']);
-                $employees = $companies->getEmployees($_GET['id']);
-                $invoices = $companies->getInvoices($_GET['id']);
+        if (isset($_GET['1'])) {
+            if (ctype_digit($_GET['1'])) {
+                $detailCompanies = $companies->getDetails($_GET['1']);
+                $employees = $companies->getEmployees($_GET['1']);
+                $invoices = $companies->getInvoices($_GET['1']);
                 $view = './View/detailCompany.php';
             } else {
                 $view = './View/error404.php';
