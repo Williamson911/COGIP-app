@@ -8,7 +8,7 @@ class ClientController
     //render function with both $_GET and $_POST vars available if it would be needed.
     public function render()
     {
-            global
+        
         $clients = new CompanyManager();
 
         $view = './View/clients.php';

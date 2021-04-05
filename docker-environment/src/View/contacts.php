@@ -19,26 +19,7 @@
 <body id="page-top">
 
 <!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="https://i.ibb.co/7Rh7NNg/24b99a4eedf226ba.png" alt="cogip" border="0" /></a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fas fa-bars ml-1"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav text-uppercase ml-auto">
-                <li class="nav-item"><a class="nav-link" href="homepage.php">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="invoices.php">Invoices</a></li>
-                <li class="nav-item"><a class="nav-link" href="companies.php">Companies</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.php">Contacts</a></li>
-                <li class="nav-item"><a class="nav-link" href="clients.php">Clients</a></li>
-                <li class="nav-item"><a class="nav-link" href="providers.php">Providers</a></li>
-                <li class="nav-item"><a class="nav-link" href="login.php">Connexion</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/View/includes/nav.php'); ?>
 <!-- Masthead-->
 <header class="masthead contact">
     <div class="container">

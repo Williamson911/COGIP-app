@@ -2,6 +2,10 @@
 declare(strict_types=1);
 
 
+$url = '';
+if (isset($_GET['url'])) {
+    $url = explode('/', $_GET['url']);
+}
 //include all your controllers here
 require 'Controller/HomepageController.php';
 require 'Controller/CompanyController.php';
@@ -14,15 +18,16 @@ require 'Controller/ClientController.php';
 
 $controller = new HomepageController();
 
-if(isset($_GET[1]) && $_GET['1'] === 'companies') {
+
+if (isset($url[0]) && $url[0] === 'companies') {
     $controller = new CompanyController();
-} elseif(isset($_GET['1']) && $_GET['1'] === 'invoices') {
+} elseif (isset($url[0]) && $url[0] === 'invoices') {
     $controller = new InvoiceController();
-} elseif(isset($_GET['1']) && $_GET['1'] === 'contacts') {
+} elseif (isset($url[0]) && $url[0] === 'contacts') {
     $controller = new ContactController();
-} elseif(isset($_GET['1']) && $_GET['1'] === 'providers') {
+} elseif (isset($url[0]) && $url[0] === 'providers') {
     $controller = new ProviderController();
-} elseif(isset($_GET['1']) && $_GET['1'] === 'clients') {
+} elseif (isset($url[0]) && $url[0] === 'clients') {
     $controller = new ClientController();
 }
 
