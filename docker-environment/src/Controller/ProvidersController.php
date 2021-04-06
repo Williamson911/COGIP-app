@@ -8,7 +8,6 @@ class ProviderController
     //render function with both $_GET and $_POST vars available if it would be needed.
     public function render()
     {
-<<<<<<< HEAD
         global $url;
         $providers = new CompanyManager();
 
@@ -28,12 +27,5 @@ class ProviderController
 
         //load the view
         require $view;
-=======
-
-        $providers = new CompanyManager();
-
-        //load the view
-        require './View/providers.php';
->>>>>>> origin/Charlotte
     }
 }
