@@ -18,7 +18,6 @@
 </head>
 <body id="page-top">
 
-<<<<<<< HEAD
 <!-- Navigation-->
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/View/includes/nav.php'); ?>
 <!-- Masthead-->
@@ -28,7 +27,6 @@
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#lastinvoices">Tell Me More</a>
     </div>
 </header>
-=======
 	<h2>Last invoices</h2>
 	<table>
 		<tr>
@@ -91,7 +89,6 @@
 		</td>
 		</tr>
 	</table>
->>>>>>> origin/Charlotte
 
 <!-- Invoices -->
 <section class="page-section bg-light" id="lastinvoices">
