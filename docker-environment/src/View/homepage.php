@@ -18,6 +18,7 @@
 </head>
 <body id="page-top">
 
+<<<<<<< HEAD
 <!-- Navigation-->
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/View/includes/nav.php'); ?>
 <!-- Masthead-->
@@ -27,6 +28,70 @@
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#lastinvoices">Tell Me More</a>
     </div>
 </header>
+=======
+	<h2>Last invoices</h2>
+	<table>
+		<tr>
+			<th>Invoice Number</th>
+			<th>Dates</th>
+			<th>Company</th>
+		</tr>
+		<tr>
+			<td><?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
+    		<p><?php echo $invoice['InvoiceNumber']?></p><?php } ?>
+		</td>
+			<td><?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
+    		<p><?php echo $invoice['InvoiceDate']?></p><?php } ?>
+		</td>
+		<td><?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
+    		<p><?php echo $invoice['Name']?></p><?php } ?>
+		</td>
+		</tr>
+	</table>
+
+	<h2>Last contacts</h2>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>e-mail</th>
+			<th>Company</th>
+		</tr>
+		<tr>
+			<td><?php foreach ($contacts->getContacts() as $key => $contact) { ?>
+    		<p><?php echo $contact['FirstName'] . ' ' . $contact['LastName']?></p><?php } ?>
+		</td>
+		<td><?php foreach ($contacts->getContacts() as $key => $contact) { ?>
+    		<p><?php echo $contact['Email']?></p><?php } ?>
+		</td>
+		<td><?php foreach ($contacts->getContacts() as $key => $contact) { ?>
+    		<p><?php echo $contact['CompanyName']?></p><?php } ?>
+		</td>
+		</tr>
+	</table>
+	<h2>Last companies</h2>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>VAT</th>
+			<th>Country</th>
+			<th>Type</th>
+		</tr>
+		<tr>
+			<td><?php foreach ($companies->getCompanies() as $key => $company) { ?>
+    		<p><?php echo $company['Name']?></p><?php } ?>
+		</td>
+		<td><?php foreach ($companies->getCompanies() as $key => $company) { ?>
+    		<p><?php echo $company['VATNumber']?></p><?php } ?>
+		</td>
+		<td><?php foreach ($companies->getCompanies() as $key => $company) { ?>
+    		<p><?php echo $company['Country']?></p><?php } ?>
+		</td>
+		<td><?php foreach ($companies->getCompanies() as $key => $company) { ?>
+    		<p><?php echo $company['Type']?></p><?php } ?>
+		</td>
+		</tr>
+	</table>
+>>>>>>> origin/Charlotte
 
 <!-- Invoices -->
 <section class="page-section bg-light" id="lastinvoices">

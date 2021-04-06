@@ -11,7 +11,7 @@ class InvoiceManager extends Manager
         
         $db = $this->connectDb();
 
-        $req = $db->query('SELECT InvoiceNumber, InvoiceDate, Name, Type 
+        $req = $db->query('SELECT i.Id, InvoiceNumber, InvoiceDate, Name, Type 
             FROM Invoices i
             INNER JOIN Companies c
             ON i.CompanyId = c.Id
@@ -24,13 +24,17 @@ class InvoiceManager extends Manager
     {
         $db = $this->connectDb();
     
+<<<<<<< HEAD
             $req = $db->prepare('SELECT InvoiceNumber, Name, VATNumber, Type, FirstName, LastName, Email
+=======
+            $req = $db->prepare('SELECT i.Id, InvoiceNumber, Name, VATNumber, Type, FirstName, LastName, Email
+>>>>>>> origin/Charlotte
                 FROM ((Invoices i
                 INNER JOIN Companies c
                 ON i.CompanyId = c.Id)
                 INNER JOIN People p
                 ON i.ClientId = p.Id)
-                WHERE InvoiceNumber = :Id');
+                WHERE i.Id = :Id');
     
             $req->execute(['Id'=>$Id]);
     
