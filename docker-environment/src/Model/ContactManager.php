@@ -16,7 +16,6 @@ class ContactManager extends Manager
 
         return $req->fetchAll(PDO::FETCH_ASSOC);
     }
-<<<<<<< HEAD
 
     public function getDetails($Id)
     {
@@ -52,6 +51,4 @@ class ContactManager extends Manager
         return $result;
     }
 
-=======
->>>>>>> origin/Charlotte
 }
