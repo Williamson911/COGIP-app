@@ -21,7 +21,7 @@
 <!-- Navigation-->
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/View/includes/nav.php'); ?>
 <!-- Masthead-->
-<header class="masthead contact">
+<header class="masthead contacts">
     <div class="container">
         <div class="masthead-heading text-uppercase">Contact Directory</div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Tell Me More</a>
