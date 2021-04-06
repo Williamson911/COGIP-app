@@ -24,11 +24,7 @@ class InvoiceManager extends Manager
     {
         $db = $this->connectDb();
     
-<<<<<<< HEAD
-            $req = $db->prepare('SELECT InvoiceNumber, Name, VATNumber, Type, FirstName, LastName, Email
-=======
             $req = $db->prepare('SELECT i.Id, InvoiceNumber, Name, VATNumber, Type, FirstName, LastName, Email
->>>>>>> origin/Charlotte
                 FROM ((Invoices i
                 INNER JOIN Companies c
                 ON i.CompanyId = c.Id)
