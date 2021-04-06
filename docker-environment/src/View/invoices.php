@@ -23,7 +23,7 @@
 <!-- Masthead-->
 <header class="masthead invoices">
     <div class="container">
-        <div class="masthead-heading text-uppercase"Companies Directory</div>
+        <div class="masthead-heading text-uppercase">Companies Directory</div>
     <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#invoices">Tell Me More</a>
     </div>
 </header>

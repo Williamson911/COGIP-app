@@ -19,6 +19,7 @@ class InvoiceManager extends Manager
 
         return $req->fetchAll(PDO::FETCH_ASSOC);
     }
+<<<<<<< HEAD
 
     public function getDetails($Id)
     {
@@ -38,4 +39,6 @@ class InvoiceManager extends Manager
     
             return $result;
     }
+=======
+>>>>>>> origin/Charlotte
 }

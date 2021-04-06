@@ -26,7 +26,11 @@
         </tr>
         </table>
 
+<<<<<<< HEAD
         <h4>Invoices</h4>
+=======
+        <h3>Invoices</h3>
+>>>>>>> origin/Charlotte
 
         <table>
         <tr>

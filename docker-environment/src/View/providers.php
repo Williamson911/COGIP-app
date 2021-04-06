@@ -23,7 +23,7 @@
 <!-- Masthead-->
 <header class="masthead providers">
     <div class="container">
-        <div class="masthead-heading text-uppercase"Provider Directory</div>
+        <div class="masthead-heading text-uppercase">Provider Directory</div>
     <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#contact">Tell Me More</a>
     </div>
 </header>
