@@ -8,7 +8,8 @@ class CompanyController
     //render function with both $_GET and $_POST vars available if it would be needed.
     public function render()
     {
-            global $url;        
+     
+        global $url;        
             $companies = new CompanyManager();
             $view = './View/companies.php';
 
