@@ -28,7 +28,7 @@ class HomeContactsManager extends Manager
     {
         $db = $this->connectDb();
 
-        $req = $db->query('SELECT FirstName, LastName, CompanyName, Email
+        $req = $db->query('SELECT FirstName, LastName, CompanyName, Email, Id
             FROM People
             ORDER BY Id DESC LIMIT 5');
 
@@ -45,7 +45,7 @@ class HomeCompaniesManager extends Manager
         
         $db = $this->connectDb();
 
-        $req = $db->query('SELECT Name, VATNumber, Country, Type 
+        $req = $db->query('SELECT Name, VATNumber, Country, Type, Id 
             FROM Companies
             ORDER BY Id DESC LIMIT 5');
 

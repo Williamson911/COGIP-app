@@ -8,17 +8,18 @@ class ProviderController
     //render function with both $_GET and $_POST vars available if it would be needed.
     public function render()
     {
-
+        global $url;
         $providers = new CompanyManager();
 
         $view = './View/providers.php';
 
-        if (isset($_GET['id'])) {
-            if (ctype_digit($_GET['id'])) {
-                $detailCompanies = $providers->getDetails($_GET['id']);
-                $employees = $providers->getEmployees($_GET['id']);
-                $invoices = $providers->getInvoices($_GET['id']);
-                $view = './View/detailCompany.php';
+        if (isset($url[1])) {
+            if (ctype_digit($url[1])) {
+                $detailCompanies = $providers->getDetails($url[1]);
+                $employees = $providers->getEmployees($url[1]);
+                $invoices = $providers->getInvoices($url[1]);
+                $view =   $_SERVER['DOCUMENT_ROOT'] . '/View/detailCompany.php';
+//génère ma variable view qui contient l'emplacement de la page. $_SERVER, prend le chemin complet du serveur.Donc le serveur document root génère ma page. méthode universelle pour renvoyer vers le bon chemin, peut importe la config du serveur (dans notre cas la config d'Apache)
             } else {
                 $view = './View/error404.php';
             }

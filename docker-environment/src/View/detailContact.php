@@ -25,8 +25,7 @@
                 <p><?php echo $invoice['InvoiceDate']?></p><?php } ?>
                 </td>
             </tr>
-        </table>
-                   
+        </table>                 
     </section>
     
 <?php require 'includes/footer.php'?>

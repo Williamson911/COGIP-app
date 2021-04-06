@@ -1,7 +1,13 @@
 <?php
-
 declare(strict_types=1);
 
+// phpinfo();
+// die();
+
+$url = '';
+if (isset($_GET['url'])) { //vérifier si mon url est vide sinon explode
+    $url = explode('/', $_GET['url']); // definir le format de l'url
+}
 //include all your controllers here
 require 'Controller/HomepageController.php';
 require 'Controller/CompanyController.php';
@@ -9,21 +15,32 @@ require 'Controller/InvoiceController.php';
 require 'Controller/ContactController.php';
 require 'Controller/ProvidersController.php';
 require 'Controller/ClientController.php';
+require 'Controller/ConnexionController.php';
+require 'Controller/AdminController.php';
 
 //Your index is your Router. You could write a simple IF here based on some $_GET or $_POST vars, to choose your controller
 
 $controller = new HomepageController();
 
-if(isset($_GET['page']) && $_GET['page'] === 'companies') {
+
+if (isset($url[0]) && $url[0] === 'companies') {
     $controller = new CompanyController();
-} elseif(isset($_GET['page']) && $_GET['page'] === 'invoices') {
+} elseif (isset($url[0]) && $url[0] === 'invoices') {
     $controller = new InvoiceController();
-} elseif(isset($_GET['page']) && $_GET['page'] === 'contacts') {
+} elseif (isset($url[0]) && $url[0] === 'contacts') {
     $controller = new ContactController();
-} elseif(isset($_GET['page']) && $_GET['page'] === 'providers') {
+} elseif (isset($url[0]) && $url[0] === 'providers') {
     $controller = new ProviderController();
-} elseif(isset($_GET['page']) && $_GET['page'] === 'clients') {
+} elseif (isset($url[0]) && $url[0] === 'clients') {
     $controller = new ClientController();
+} elseif(isset($_GET['page']) && $_GET['page'] === 'admin') {
+    $controller = new ConnexionController();
+} elseif(isset($_GET['page']) && $_GET['page'] === 'newcontact') {
+    $controller = new AdminController();
+} elseif(isset($_GET['page']) && $_GET['page'] === 'newcompany') {
+    $controller = new AdminController();
+} elseif(isset($_GET['page']) && $_GET['page'] === 'newinvoice') {
+    $controller = new AdminController();
 }
 
 $controller->render();
