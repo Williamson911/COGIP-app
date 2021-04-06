@@ -78,7 +78,7 @@
                         <?php foreach ($companies->getProviders() as $key => $provider) { ?>
                             <p><?php echo $provider['VATNumber']?></p><?php } ?>
                     </td>
-                    <td class="pr-2">
+                    <td>
                         <?php foreach ($companies->getProviders() as $key => $provider) { ?>
                             <p><?php echo $provider['Country']?></p><?php } ?>
                     </td>
