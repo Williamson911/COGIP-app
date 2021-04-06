@@ -2,7 +2,7 @@
 
     <section>
         
-        <h1>Clients</h1>
+        <h2>Clients</h2>
 
         <table>
         <tr>

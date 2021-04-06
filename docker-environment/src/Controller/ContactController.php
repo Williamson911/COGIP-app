@@ -11,7 +11,19 @@ class ContactController
 
         $contacts = new ContactManager();
 
+        $view = './View/contacts.php';
+
+        if (isset($_GET['id'])) {
+            if (ctype_digit($_GET['id'])) {
+                $detailContact = $contacts->getDetails($_GET['id']);
+                $invoices = $contacts->getInvoices($_GET['id']);
+                $view = './View/detailContact.php';
+            } else {
+                $view = './View/error404.php';
+            }
+        }
+
         //load the view
-        require './View/contacts.php';
+        require $view;
     }
 }

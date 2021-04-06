@@ -2,9 +2,12 @@
 
     <section>
         
-        <h1>Companies</h1>
+        <h2>Companies</h2>
 
-        <h2>Clients</h2>
+        <a href="/index.php?page=providers">Providers</a>
+        <a href="/index.php?page=clients">Clients</a>
+
+        <h3>Clients</h3>
 
         <table>
         <tr>
@@ -28,7 +31,7 @@
         </tr>
         </table>
         
-        <h2>Suppliers</h2>
+        <h3>Suppliers</h3>
 
         <table>
         <tr>

@@ -2,12 +2,12 @@
 
     <section>
         
-        <h1>Company: <?= $detailCompanies['Name']?></h1>
+        <h2>Company: <?= $detailCompanies['Name']?></h2>
 
-        <h2>VAT: <?= $detailCompanies['VATNumber']?></h2>
-        <h2>Type: <?= $detailCompanies['Type']?></h2>
+        <h3>VAT: <?= $detailCompanies['VATNumber']?></h3>
+        <h3>Type: <?= $detailCompanies['Type']?></h3>
 
-        <h3>Contact persons</h3>
+        <h4>Contact persons</h4>
 
         <table>
         <tr>
@@ -26,7 +26,7 @@
         </tr>
         </table>
 
-        <h3>Invoices</h3>
+        <h4>Invoices</h4>
 
         <table>
         <tr>

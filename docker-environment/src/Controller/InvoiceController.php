@@ -11,7 +11,18 @@ class InvoiceController
 
         $invoices = new InvoiceManager();
 
+        $view = './View/invoices.php';
+
+        if (isset($_GET['id'])) {
+            if (ctype_digit($_GET['id'])) {
+                $detailInvoice = $invoices->getDetails($_GET['id']);
+                $view = './View/detailInvoice.php';
+            } else {
+                $view = './View/error404.php';
+            }
+        }
+
         //load the view
-        require './View/invoices.php';
+        require $view;
     }
 }

@@ -2,7 +2,7 @@
 
     <section>
         
-      <h1>COGIP: List of invoices</h1>
+      <h2>COGIP: List of invoices</h2>
 
       <table>
       <tr>
@@ -13,7 +13,7 @@
       </tr>
       <tr>
         <td><?php foreach ($invoices->getInvoice() as $key => $invoice) { ?>
-        <p><a href="/index.php?page=invoices&id=<?=$invoice['InvoiceNumber']?>"><?= $invoice['InvoiceNumber']?></a></p><?php } ?>
+        <p><a href="/index.php?page=invoices&id=<?=$invoice['Id']?>"><?= $invoice['InvoiceNumber']?></a></p><?php } ?>
         <td><?php foreach ($invoices->getInvoice() as $key => $invoice) { ?>
     		<p><?php echo $invoice['InvoiceDate']?></p><?php } ?></td>
         <td><?php foreach ($invoices->getInvoice() as $key => $invoice) { ?>

@@ -11,7 +11,20 @@ class ProviderController
 
         $providers = new CompanyManager();
 
+        $view = './View/providers.php';
+
+        if (isset($_GET['id'])) {
+            if (ctype_digit($_GET['id'])) {
+                $detailCompanies = $providers->getDetails($_GET['id']);
+                $employees = $providers->getEmployees($_GET['id']);
+                $invoices = $providers->getInvoices($_GET['id']);
+                $view = './View/detailCompany.php';
+            } else {
+                $view = './View/error404.php';
+            }
+        }
+
         //load the view
-        require './View/providers.php';
+        require $view;
     }
 }

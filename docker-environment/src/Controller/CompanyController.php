@@ -20,7 +20,7 @@ class CompanyController
                 $invoices = $companies->getInvoices($_GET['id']);
                 $view = './View/detailCompany.php';
             } else {
-                echo 'Error';
+                $view = './View/error404.php';
             }
         }
 

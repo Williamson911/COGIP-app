@@ -2,7 +2,7 @@
 
     <section>
         
-        <h1>Suppliers</h1>
+        <h2>Suppliers</h2>
 
         <table>
         <tr>
