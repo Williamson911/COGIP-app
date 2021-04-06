@@ -17,7 +17,7 @@ class ContactController
             if (ctype_digit($url[1])) {
                 $detailContact = $contacts->getDetails($url[1]);
                 $invoices = $contacts->getInvoices($url[1]);
-                $view =   $_SERVER['DOCUMENT_ROOT'] . '/View/detailContact.php';
+                $view = $_SERVER['DOCUMENT_ROOT'] . '/View/detailContact.php';
             } else {
                 $view = './View/error404.php';
             }

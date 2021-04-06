@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
 
-phpinfo();
-die();
+// phpinfo();
+// die();
 
 $url = '';
 if (isset($_GET['url'])) {
