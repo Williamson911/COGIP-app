@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* @charset "UTF-8";
 /*!
 * Start Bootstrap - Agency v6.0.3 (https://startbootstrap.com/theme/agency)
 * Copyright 2013-2020 Start Bootstrap
@@ -10114,7 +10114,7 @@ img::-moz-selection {
     margin-right: 0;
   }
 }
-header.masthead {
+/* header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
@@ -10124,7 +10124,7 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
-}
+} */
 
 header.masthead {
   padding-top: 10.5rem;
