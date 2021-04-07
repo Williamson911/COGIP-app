@@ -70,15 +70,15 @@
                     <th>Country</th>
                 </tr>
                 <tr>
-                    <td class="pl-2">
+                    <td class="pr-2">
                         <?php foreach ($companies->getProviders() as $key => $provider) { ?>
                             <p><a href="/companies/<?=$provider['Id']?>"><?= $provider['Name']?></a></p><?php } ?>
                     </td>
-                    <td class="pl-2">
+                    <td class="pr-2">
                         <?php foreach ($companies->getProviders() as $key => $provider) { ?>
                             <p><?php echo $provider['VATNumber']?></p><?php } ?>
                     </td>
-                    <td class="pl-2">
+                    <td>
                         <?php foreach ($companies->getProviders() as $key => $provider) { ?>
                             <p><?php echo $provider['Country']?></p><?php } ?>
                     </td>

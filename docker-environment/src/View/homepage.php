@@ -105,13 +105,13 @@
                     <th>Company</th>
                 </tr>
                 <tr>
-                    <td class="pl-2"><?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
+                    <td class="pr-2"><?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
                             <p><?php echo $invoice['InvoiceNumber']?></p><?php } ?>
                     </td>
-                    <td class="pl-2"><?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
+                    <td class="pr-2"><?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
                             <p><?php echo $invoice['InvoiceDate']?></p><?php } ?>
                     </td>
-                    <td class="pl-2"><?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
+                    <td class="pr-2"><?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
                             <p><?php echo $invoice['Name']?></p><?php } ?>
                     </td>
                 </tr>
@@ -120,7 +120,7 @@
     </div>
 </section>
 <!-- Companies -->
-<section class="page-section" id="lastcompanies">
+<section class="page-section bg-light" id="lastcompanies">
     <div class="container">
         <div class="text-center">
             <h2 class="section-heading text-uppercase"Last Companies</h2>
@@ -134,16 +134,16 @@
                     <th>Type</th>
                 </tr>
                 <tr>
-                    <td class="pl-2"><?php foreach ($companies->getCompanies() as $key => $company) { ?>
+                    <td class="pr-2"><?php foreach ($companies->getCompanies() as $key => $company) { ?>
                             <p><?php echo $company['Name']?></p><?php } ?>
                     </td>
-                    <td class="pl-2"><?php foreach ($companies->getCompanies() as $key => $company) { ?>
+                    <td class="pr-2"><?php foreach ($companies->getCompanies() as $key => $company) { ?>
                             <p><?php echo $company['VATNumber']?></p><?php } ?>
                     </td>
-                    <td class="pl-2"><?php foreach ($companies->getCompanies() as $key => $company) { ?>
+                    <td class="pr-2"><?php foreach ($companies->getCompanies() as $key => $company) { ?>
                             <p><?php echo $company['Country']?></p><?php } ?>
                     </td>
-                    <td class="pl-2"><?php foreach ($companies->getCompanies() as $key => $company) { ?>
+                    <td><?php foreach ($companies->getCompanies() as $key => $company) { ?>
                             <p><?php echo $company['Type']?></p><?php } ?>
                     </td>
                 </tr>
