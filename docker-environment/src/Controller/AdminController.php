@@ -12,6 +12,8 @@ class AdminController
     //render function with both $_GET and $_POST vars available if it would be needed.
     public function render()
     {
+        global $url;
+        $admin= new AdminManager();
 
         $admin = new AdminManager();
 
