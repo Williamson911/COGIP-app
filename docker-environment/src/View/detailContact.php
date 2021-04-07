@@ -1,32 +1,32 @@
-<?php require 'includes/header.php'?>
+<?php require 'includes/header.php' ?>
 
-    <section>
-        
-        <h2>Contact: <?= $detailContact['FirstName'] . ' ' . $detailContact['LastName'] ?></h2>
+<section>
 
-        <p>Contact: <?= $detailContact['FirstName'] . ' ' . $detailContact['LastName'] ?></p>
-        <p>Company: <?= $detailContact['CompanyName'] ?></p>
-        <p>Email: <?= $detailContact['Email'] ?></p>
+    <h2>Contact: <?= $detailContact['FirstName'] . ' ' . $detailContact['LastName'] ?></h2>
 
-        <h3>Contact person for these invoices:</h3>
+    <p>Contact: <?= $detailContact['FirstName'] . ' ' . $detailContact['LastName'] ?></p>
+    <p>Company: <?= $detailContact['CompanyName'] ?></p>
+    <p>Email: <?= $detailContact['Email'] ?></p>
 
-        <table>
-            <tr>
-                <th>Invoice number</th>
-                <th>Date</th>
-            </tr>
-            <tr>
-                <td>
+    <h3>Contact person for these invoices:</h3>
+
+    <table>
+        <tr>
+            <th>Invoice number</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>
                 <?php foreach ($invoices as $key => $invoice) { ?>
-                <p><?php echo $invoice['InvoiceNumber']?></p><?php } ?>
-                </td>
-                <td>
+                    <p><?php echo $invoice['InvoiceNumber'] ?></p><?php } ?>
+            </td>
+            <td>
                 <?php foreach ($invoices as $key => $invoice) { ?>
-                <p><?php echo $invoice['InvoiceDate']?></p><?php } ?>
-                </td>
-            </tr>
-        </table>
-                   
-    </section>
-    
-<?php require 'includes/footer.php'?>
+                    <p><?php echo $invoice['InvoiceDate'] ?></p><?php } ?>
+            </td>
+        </tr>
+    </table>
+
+</section>
+
+<?php require 'includes/footer.php' ?>
