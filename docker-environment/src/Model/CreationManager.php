@@ -13,7 +13,7 @@ class CreationManager extends Manager
         $req = $db->prepare("INSERT INTO People (Id, FirstName, LastName, CompanyName, Email)
         VALUES (NULL, :firstname, :lastname, :company, :email)");
 
-        $req->execute(['firstname'=>$firstname, 'lastname'=>$lastname, 'company'=>$company, 'email'=>$email]);
+        $req->execute(['firstname' => $firstname, 'lastname' => $lastname, 'company' => $company, 'email' => $email]);
 
         $result = $req->fetch();
 
@@ -22,7 +22,7 @@ class CreationManager extends Manager
 
     public function getCompanies()
     {
-        
+
         $db = $this->connectDb();
 
         $req = $db->query('SELECT Name 

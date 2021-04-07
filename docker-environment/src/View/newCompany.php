@@ -1,4 +1,4 @@
-<?php require 'includes/headerAdmin.php'?>
+<?php require 'includes/headerAdmin.php' ?>
 
 
 <section>Create a new company</section>

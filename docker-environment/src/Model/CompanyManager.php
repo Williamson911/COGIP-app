@@ -8,7 +8,7 @@ class CompanyManager extends Manager
 {
     public function getClients()
     {
-        
+
         $db = $this->connectDb();
 
         $req = $db->query('SELECT Name, Country, VATNumber, Id
@@ -21,7 +21,7 @@ class CompanyManager extends Manager
 
     public function getProviders()
     {
-        
+
         $db = $this->connectDb();
 
         $req = $db->query('SELECT Name, Country, VATNumber, Id
@@ -34,14 +34,14 @@ class CompanyManager extends Manager
 
     public function getDetails($Id)
     {
-        
+
         $db = $this->connectDb();
 
         $req = $db->prepare('SELECT Name, Country, VATNumber, Id, Type
             FROM Companies
             WHERE Id = :Id');
 
-        $req->execute(['Id'=>$Id]);
+        $req->execute(['Id' => $Id]);
 
         $result = $req->fetch();
 
@@ -59,7 +59,7 @@ class CompanyManager extends Manager
             WHERE c.Id = :Id
             ORDER BY LastName');
 
-        $req->execute(['Id'=>$Id]);
+        $req->execute(['Id' => $Id]);
 
         $result = $req->fetchAll();
 
@@ -79,7 +79,7 @@ class CompanyManager extends Manager
             WHERE c.Id = :Id
             ORDER BY InvoiceDate DESC');
 
-        $req->execute(['Id'=>$Id]);
+        $req->execute(['Id' => $Id]);
 
         $result = $req->fetchAll();
 

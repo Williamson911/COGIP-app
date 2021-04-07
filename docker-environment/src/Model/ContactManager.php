@@ -19,14 +19,14 @@ class ContactManager extends Manager
 
     public function getDetails($Id)
     {
-        
+
         $db = $this->connectDb();
 
         $req = $db->prepare('SELECT FirstName, LastName, Email, CompanyName
             FROM People
             WHERE Id = :Id');
 
-        $req->execute(['Id'=>$Id]);
+        $req->execute(['Id' => $Id]);
 
         $result = $req->fetch();
 
@@ -44,11 +44,10 @@ class ContactManager extends Manager
             WHERE p.Id = :Id
             ORDER BY InvoiceDate DESC');
 
-        $req->execute(['Id'=>$Id]);
+        $req->execute(['Id' => $Id]);
 
         $result = $req->fetchAll();
 
         return $result;
     }
-
 }

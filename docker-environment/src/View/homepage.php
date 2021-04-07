@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +18,13 @@
     <link href="./css/styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
+=======
+<?php require 'includes/header.php' ?>
+<!-- this is the view, try to put only simple if's and loops here.
+Anything complex should be calculated in the model -->
+
+<section>
+>>>>>>> origin/Charlotte
 
 <!-- Navigation-->
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/View/includes/nav.php'); ?>
@@ -36,14 +44,14 @@
 		</tr>
 		<tr>
 			<td><?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
-    		<p><?php echo $invoice['InvoiceNumber']?></p><?php } ?>
-		</td>
+					<p><?php echo $invoice['InvoiceNumber'] ?></p><?php } ?>
+			</td>
 			<td><?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
-    		<p><?php echo $invoice['InvoiceDate']?></p><?php } ?>
-		</td>
-		<td><?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
-    		<p><?php echo $invoice['Name']?></p><?php } ?>
-		</td>
+					<p><?php echo $invoice['InvoiceDate'] ?></p><?php } ?>
+			</td>
+			<td><?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
+					<p><?php echo $invoice['Name'] ?></p><?php } ?>
+			</td>
 		</tr>
 	</table>
 
@@ -56,14 +64,14 @@
 		</tr>
 		<tr>
 			<td><?php foreach ($contacts->getContacts() as $key => $contact) { ?>
-    		<p><?php echo $contact['FirstName'] . ' ' . $contact['LastName']?></p><?php } ?>
-		</td>
-		<td><?php foreach ($contacts->getContacts() as $key => $contact) { ?>
-    		<p><?php echo $contact['Email']?></p><?php } ?>
-		</td>
-		<td><?php foreach ($contacts->getContacts() as $key => $contact) { ?>
-    		<p><?php echo $contact['CompanyName']?></p><?php } ?>
-		</td>
+					<p><?php echo $contact['FirstName'] . ' ' . $contact['LastName'] ?></p><?php } ?>
+			</td>
+			<td><?php foreach ($contacts->getContacts() as $key => $contact) { ?>
+					<p><?php echo $contact['Email'] ?></p><?php } ?>
+			</td>
+			<td><?php foreach ($contacts->getContacts() as $key => $contact) { ?>
+					<p><?php echo $contact['CompanyName'] ?></p><?php } ?>
+			</td>
 		</tr>
 	</table>
 	<h2>Last companies</h2>
@@ -76,17 +84,17 @@
 		</tr>
 		<tr>
 			<td><?php foreach ($companies->getCompanies() as $key => $company) { ?>
-    		<p><?php echo $company['Name']?></p><?php } ?>
-		</td>
-		<td><?php foreach ($companies->getCompanies() as $key => $company) { ?>
-    		<p><?php echo $company['VATNumber']?></p><?php } ?>
-		</td>
-		<td><?php foreach ($companies->getCompanies() as $key => $company) { ?>
-    		<p><?php echo $company['Country']?></p><?php } ?>
-		</td>
-		<td><?php foreach ($companies->getCompanies() as $key => $company) { ?>
-    		<p><?php echo $company['Type']?></p><?php } ?>
-		</td>
+					<p><?php echo $company['Name'] ?></p><?php } ?>
+			</td>
+			<td><?php foreach ($companies->getCompanies() as $key => $company) { ?>
+					<p><?php echo $company['VATNumber'] ?></p><?php } ?>
+			</td>
+			<td><?php foreach ($companies->getCompanies() as $key => $company) { ?>
+					<p><?php echo $company['Country'] ?></p><?php } ?>
+			</td>
+			<td><?php foreach ($companies->getCompanies() as $key => $company) { ?>
+					<p><?php echo $company['Type'] ?></p><?php } ?>
+			</td>
 		</tr>
 	</table>
 
@@ -180,6 +188,7 @@
         </div>
     </div>
 </section>
+<<<<<<< HEAD
 <!-- Footer-->
 <footer class="footer py-4">
     <div class="container">
@@ -209,3 +218,6 @@
 <script src="js/scripts.js"></script>
 </body>
 </html>
+=======
+<?php require 'includes/footer.php' ?>
+>>>>>>> origin/Charlotte

@@ -14,7 +14,7 @@ class ConnexionManager extends Manager
             FROM Admin
             WHERE Username = :username');
 
-        $req->execute(['username'=>$username]);
+        $req->execute(['username' => $username]);
 
         $login = $req->fetch();
 
@@ -26,14 +26,14 @@ class DeletionManager extends Manager
 {
     public function deleteInvoice($Id)
     {
-        
+
         $db = $this->connectDb();
 
         $req = $db->prepare('DELETE 
         FROM Invoices
         WHERE InvoiceNumber = :Id');
 
-        $req->execute(['Id'=>$Id]);
+        $req->execute(['Id' => $Id]);
 
         $result = $req->fetch();
 
@@ -48,7 +48,7 @@ class DeletionManager extends Manager
         FROM People
         WHERE Id = :Id');
 
-        $req->execute(['Id'=>$Id]);
+        $req->execute(['Id' => $Id]);
 
         $result = $req->fetch();
 
@@ -63,7 +63,7 @@ class DeletionManager extends Manager
         FROM Companies
         WHERE Id = :Id');
 
-        $req->execute(['Id'=>$Id]);
+        $req->execute(['Id' => $Id]);
 
         $result = $req->fetch();
 

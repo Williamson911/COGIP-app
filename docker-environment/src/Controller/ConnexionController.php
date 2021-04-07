@@ -1,5 +1,6 @@
 <?php
-declare(strict_types = 1);
+
+declare(strict_types=1);
 
 require_once('./Model/ConnexionManager.php');
 require_once('./Model/HomepageManager.php');
@@ -9,11 +10,11 @@ class ConnexionController
 
     public function render()
     {
-  
+
         $invoices = new HomeInvoicesManager();
 
         $contacts = new HomeContactsManager();
-    
+
         $companies = new HomeCompaniesManager();
 
         $connexion = new ConnexionManager();
@@ -23,18 +24,24 @@ class ConnexionController
         if (isset($_SESSION['username']) && isset($_SESSION['userId']) && isset($_SESSION['role'])) {
             $view = './View/admin.php';
 
-            if (isset($_POST['delete-invoice'])) {
-                $delInvoice = $delete->deleteInvoice($_POST['id-invoice']);
+            if (isset($_POST['deconnexion'])) {
+                session_unset();
+                header('Location: index.php');
             }
 
-            if (isset($_POST['delete-contact'])) {
-                $delContact = $delete->deleteContact($_POST['id-people']);
-            }
+            if ($_SESSION['role'] == 'Admin') {
+                if (isset($_POST['delete-invoice'])) {
+                    $delInvoice = $delete->deleteInvoice($_POST['id-invoice']);
+                }
 
-            if (isset($_POST['delete-company'])) {
-                $delCompany = $delete->deleteCompany($_POST['id-company']);
-            }
+                if (isset($_POST['delete-contact'])) {
+                    $delContact = $delete->deleteContact($_POST['id-people']);
+                }
 
+                if (isset($_POST['delete-company'])) {
+                    $delCompany = $delete->deleteCompany($_POST['id-company']);
+                }
+            }
         } else {
             $view = './View/connexion.php';
 

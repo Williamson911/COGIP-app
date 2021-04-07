@@ -1,4 +1,4 @@
-<?php require 'includes/headerAdmin.php'?>
+<?php require 'includes/headerAdmin.php' ?>
 
 
 <section>Create a new contact</section>
@@ -15,8 +15,8 @@
     <br>
     <label>Company</label>
     <select name="company" id="company" required="required">
-        <?php foreach ($creation->getCompanies() as $key => $company) { ?>
-            <option value="<?php echo $company['Name']?>"><?php echo $company['Name']?></option>
+        <?php foreach ($admin->getCompanies() as $key => $company) { ?>
+            <option value="<?php echo $company['Name'] ?>"><?php echo $company['Name'] ?></option>
         <?php } ?>
     </select>
     <br>

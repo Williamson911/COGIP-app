@@ -1,5 +1,6 @@
 <?php
-declare(strict_types = 1);
+
+declare(strict_types=1);
 
 require_once('./Model/HomepageManager.php');
 
@@ -19,4 +20,3 @@ class HomepageController
         require('./View/homepage.php');
     }
 }
-
