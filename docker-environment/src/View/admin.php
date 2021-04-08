@@ -31,7 +31,7 @@ Anything complex should be calculated in the model -->
                         <?php if ($_SESSION['role'] == 'Admin') : ?>
                             <td class="pr-2">
                                 <?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
-                                    <p><a href="/index.php?page=editinvoice&id=<?= $invoice['Id'] ?>">edit</a></p>
+                                    <p><a href="/editinvoice/<?= $invoice['Id'] ?>">edit</a></p>
                                 <?php } ?>
                             </td>
                         <?php endif ?>
@@ -84,7 +84,7 @@ Anything complex should be calculated in the model -->
 			<?php if ($_SESSION['role'] == 'Admin') : ?>
 				<td class="pr-2">
 					<?php foreach ($contacts->getContacts() as $key => $contact) { ?>
-						<p><a href="/index.php?page=editcontact&id=<?= $contact['Id'] ?>">edit</a></p>
+						<p><a href="/editcontact/<?= $contact['Id'] ?>">edit</a></p>
 					<?php } ?>
 				</td>
 			<?php endif ?>
@@ -140,7 +140,7 @@ Anything complex should be calculated in the model -->
 		<tr>
 			<?php if ($_SESSION['role'] == 'Admin') : ?>
 				<td class="pr-2"><?php foreach ($companies->getCompanies() as $key => $company) { ?>
-						<p><a href="/index.php?page=editcompany&id=<?= $company['Id'] ?>">edit</a></p><?php } ?>
+						<p><a href="/editcompany/<?= $company['Id'] ?>">edit</a></p><?php } ?>
 				</td class="pr-2">
 			<?php endif ?>
 			<td class="pr-2"><?php foreach ($companies->getCompanies() as $key => $company) { ?>
