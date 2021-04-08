@@ -30,8 +30,8 @@
         <option value="Provider">Provider</option>
     </select>
         </div>
-    <button type="submit" name="createNewCompany">Submit</button>
-    <button><a href="/index.php?page=admin">Cancel</a></button>
+    <button class="btn btn-primary btn-xl text-uppercase" type="submit" name="createNewCompany">Submit</button>
+    <button class="btn btn-danger btn-xl text-uppercase"><a href="/index.php?page=admin">Cancel</a></button>
     </div>
     </div>
 </form>

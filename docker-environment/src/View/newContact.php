@@ -1,25 +1,53 @@
 <?php require 'includes/headerAdmin.php' ?>
 
 
-<section>Create a new contact</section>
+<section class="page-section bg-light">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Create a new contact</h2>
+        </div>
 
 <form action="" method="POST">
+    <div class="row align-items-stretch mb-5">
+        <div class="col-md-6">
+            <div class="form-group">
     <label>Lastname</label>
     <input id="lastname" name="lastname" type="text" required="required">
-    <br>
+            </div>
+            <div class="form-group">
     <label>Firstname</label>
     <input id="firstname" name="firstname" type="text" required="required">
-    <br>
+            </div>
+            <div class="form-group">
     <label>Email</label>
     <input id="email" name="email" type="email" required="required">
-    <br>
+            </div>
+            <div class="form-group">
     <label>Company</label>
     <select name="company" id="company" required="required">
         <?php foreach ($admin->getCompanies() as $key => $company) { ?>
             <option value="<?php echo $company['Name'] ?>"><?php echo $company['Name'] ?></option>
         <?php } ?>
     </select>
-    <br>
-    <button type="submit" name="createNewContact">Submit</button>
-    <button><a href="/admin">Cancel</a></button>
+            </div>
+    <button class="btn btn-primary btn-xl text-uppercase" type="submit" name="createNewContact">Submit</button>
+    <button class="btn btn-danger btn-xl text-uppercase"><a href="/admin">Cancel</a></button>
+        </div>
+    </div>
 </form>
+    </div>
+</section>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- Contact form JS-->
+    <script src="assets/mail/jqBootstrapValidation.js"></script>
+    <script src="assets/mail/contact_me.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    </body>
+    </html>
+<?php require 'includes/footer.php' ?>
