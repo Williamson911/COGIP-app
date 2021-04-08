@@ -8,9 +8,9 @@ Anything complex should be calculated in the model -->
             <h2 class="section-heading text-uppercase">Hello <?= $_SESSION['username'] ?>!</h2>
 	<p>What operations do you want to perform today?</p>
 
-	<a class="btn btn-primary btn-xl text-uppercase href="/index.php?page=newinvoice">+ New invoice</a>
-	<a class="btn btn-primary btn-xl text-uppercase href="/index.php?page=newcontact">+ New contact</a>
-	<a class="btn btn-primary btn-xl text-uppercase href="/index.php?page=newcompany">+ New company</a>
+	<a class="btn btn-primary btn-xl text-uppercase" href="/newinvoice">+ New invoice</a>
+	<a class="btn btn-primary btn-xl text-uppercase" href="/newcontact">+ New contact</a>
+	<a class="btn btn-primary btn-xl text-uppercase" href="/newcompany">+ New company</a>
 
             <h2 class="section-heading text-uppercase">Last invoices</h2>
         </div>

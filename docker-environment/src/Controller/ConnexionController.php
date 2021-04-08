@@ -55,7 +55,9 @@ class ConnexionController
                     $_SESSION['userId'] = $checkPerson['Id'];
                     $_SESSION['role'] = $checkPerson['Role'];
                     // header('Location: /login');
+                echo '<script> window.location.reload() </script>';
                 }
+
             }
         }
 
