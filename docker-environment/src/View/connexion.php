@@ -18,7 +18,6 @@
 </head>
 <body id="page-top">
 <!-- Navigation-->
-<<<<<<< HEAD
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/View/includes/nav.php'); ?> <!--import du code nav dans ma page $_SERVER['DOCUMENT_ROOT= pour le savoir var_dum $_SERVER[document root]'] permet de prendre le chemin complet(les dossier de l'emplacement de la racine du serveur- )--> 
 
 
