@@ -75,7 +75,7 @@
 <script src="/assets/mail/contact_me.js"></script>
 <!-- le lien jq permet de faire un prévalidation du form-->
 <!-- Core theme JS-->
-<script src="/js/scripts.js"></script>
+<script src="/js/scripts.js"></script>     
 </body>
 </html>
 <?php require 'includes/footer.php' ?>

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 session_start();
-var_dump($_SESSION);
+// var_dump($_SESSION);
 //  phpinfo();
 //  die();
 
@@ -51,5 +51,6 @@ if (isset($url[0]) && $url[0] === 'companies') {
 } elseif (isset($url[0]) && $url[0] ==='moderation') {
     $controller = new AdminController();
 }
+error_reporting(E_ERROR);
 
 $controller->render();

@@ -13,7 +13,6 @@ class AdminController
     public function render()
     {
         global $url;
-        $admin= new AdminManager();
 
         $admin = new AdminManager();
 
