@@ -37,13 +37,13 @@
             <li class="nav-item"><a class="nav-link" href="/index.php?page=invoices">Invoices</a></li>
             <li class="nav-item"><a class="nav-link" href="/index.php?page=contacts">Contacts</a></li>
             <li class="nav-item"><a class="nav-link" href="/index.php?page=moderation">Admin</a></li>
-                    </ul>
-                        <div class="text-center">
-                <form action="" method="POST">
-                    <button class="btn btn-danger btn-xl text-uppercase" type="submit" name="deconnexion">Log out</button>
-                </form>
-                        </div>
+                        <li>
+                            <form action="" method="POST">
+                                <button type="submit" name="deconnexion">Log out</button>
+                            </form>
+                        </li>
 
+                    </ul>
                 </div>
             </div>
         </nav>
