@@ -54,7 +54,7 @@ class ConnexionController
                     $_SESSION['username'] = $checkPerson['Username'];
                     $_SESSION['userId'] = $checkPerson['Id'];
                     $_SESSION['role'] = $checkPerson['Role'];
-                    header('Location: index.php?page=admin');
+                    header('Location: /index');
                 }
             }
         }

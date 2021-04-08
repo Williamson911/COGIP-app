@@ -33,21 +33,21 @@ if (isset($url[0]) && $url[0] === 'companies') {
     $controller = new ProviderController();
 } elseif (isset($url[0]) && $url[0] === 'clients') {
     $controller = new ClientController();
-} elseif (isset($_GET['page']) && $_GET['page'] === 'admin') {
+} elseif (isset($url[0]) && $url[0] === 'login') {
     $controller = new ConnexionController();
-} elseif (isset($_GET['page']) && $_GET['page'] === 'newcontact') {
+} elseif (isset($url[0]) && $url[0] ==='newcontact') {
     $controller = new AdminController();
-} elseif (isset($_GET['page']) && $_GET['page'] === 'newcompany') {
+} elseif (isset($url[0]) && $url[0] ==='newcompany') {
     $controller = new AdminController();
-} elseif (isset($_GET['page']) && $_GET['page'] === 'newinvoice') {
+} elseif (isset($url[0]) && $url[0] ==='newinvoice') {
     $controller = new AdminController();
-} elseif (isset($_GET['page']) && $_GET['page'] === 'editcontact') {
+} elseif (isset($url[0]) && $url[0] ==='editcontact') {
     $controller = new AdminController();
-} elseif (isset($_GET['page']) && $_GET['page'] === 'editcompany') {
+} elseif (isset($url[0]) && $url[0] ==='editcompany') {
     $controller = new AdminController();
-} elseif (isset($_GET['page']) && $_GET['page'] === 'editinvoice') {
+} elseif (isset($url[0]) && $url[0] ==='editinvoice') {
     $controller = new AdminController();
-} elseif (isset($_GET['page']) && $_GET['page'] === 'moderation') {
+} elseif (isset($url[0]) && $url[0] ==='moderation') {
     $controller = new AdminController();
 }
 
