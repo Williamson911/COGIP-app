@@ -11,20 +11,12 @@
 <body>
     <header>
         <h1>Welcome to the COGIP!</h1>
+
             <a href="/">Home</a>
             <a href="/companies">Companies</a>
             <a href="/invoices">Invoices</a>
             <a href="/contacts">Contacts</a>
-            <a href="/providers">Providers</a>
-            <a href="/clients">Clients</a>
-
-        <ul>
-            <li><a href="/index.php">Home</a></li>
-            <li><a href="/index.php?page=companies">Companies</a></li>
-            <li><a href="/index.php?page=invoices">Invoices</a></li>
-            <li><a href="/index.php?page=contacts">Contacts</a></li>
             <?php if (!isset($_SESSION['username']) && !isset($_SESSION['userId']) && !isset($_SESSION['role'])) : ?>
-            <li><a href="/login">Connexion</a></li>
+            <a href="/login">Connexion</a>
             <?php endif ?>
-        </ul>
     </header>
