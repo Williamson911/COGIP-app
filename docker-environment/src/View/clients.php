@@ -19,7 +19,7 @@
 <body id="page-top">
 
 <!-- Navigation-->
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/View/includes/nav.php'); ?>
+<?php include($_SERVER['DOCUMENT_ROOT'] . '/View/includes/nav.php'); ?> <!--import du code nav dans ma page-->
 <!-- Masthead-->
 <header class="masthead clients">
     <div class="container">

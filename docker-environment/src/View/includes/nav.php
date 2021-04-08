@@ -11,8 +11,8 @@
                 <li class="nav-item"><a class="nav-link" href="/invoices">Invoices</a></li>
                 <li class="nav-item"><a class="nav-link" href="/companies">Companies</a></li>
                 <li class="nav-item"><a class="nav-link" href="/contacts">Contacts</a></li>
-                <li class="nav-item"><a class="nav-link" href="/clients">Clients</a></li>
-                <li class="nav-item"><a class="nav-link" href="/providers">Providers</a></li>
+                <!-- <li class="nav-item"><a class="nav-link" href="/clients">Clients</a></li>
+                <li class="nav-item"><a class="nav-link" href="/providers">Providers</a></li> -->
                 <li class="nav-item"><a class="nav-link" href="/login">Connexion</a></li>
             </ul>
         </div>

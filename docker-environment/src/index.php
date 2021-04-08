@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
-
+session_start();
+var_dump($_SESSION);
 //  phpinfo();
 //  die();
 
