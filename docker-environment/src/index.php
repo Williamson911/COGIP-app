@@ -22,7 +22,6 @@ require 'Controller/AdminController.php';
 
 $controller = new HomepageController();
 
-<<<<<<< HEAD
 
 if (isset($url[0]) && $url[0] === 'companies') {
     $controller = new CompanyController();
@@ -33,17 +32,6 @@ if (isset($url[0]) && $url[0] === 'companies') {
 } elseif (isset($url[0]) && $url[0] === 'providers') {
     $controller = new ProviderController();
 } elseif (isset($url[0]) && $url[0] === 'clients') {
-=======
-if (isset($_GET['page']) && $_GET['page'] === 'companies') {
-    $controller = new CompanyController();
-} elseif (isset($_GET['page']) && $_GET['page'] === 'invoices') {
-    $controller = new InvoiceController();
-} elseif (isset($_GET['page']) && $_GET['page'] === 'contacts') {
-    $controller = new ContactController();
-} elseif (isset($_GET['page']) && $_GET['page'] === 'providers') {
-    $controller = new ProviderController();
-} elseif (isset($_GET['page']) && $_GET['page'] === 'clients') {
->>>>>>> origin/Charlotte
     $controller = new ClientController();
 } elseif (isset($_GET['page']) && $_GET['page'] === 'admin') {
     $controller = new ConnexionController();
