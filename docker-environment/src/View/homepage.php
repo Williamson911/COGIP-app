@@ -59,7 +59,7 @@
 <section class="page-section bg-light" id="lastcompanies">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase"Last Companies</h2>
+            <h2 class="section-heading text-uppercase">Last Companies</h2>
         </div>
         <div>
             <table>
