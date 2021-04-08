@@ -35,7 +35,7 @@
 
         settings.options = $.extend(true, settings.options, options);
 
-        var $siblingElements = this;
+        // var $siblingElements = this;
 
         var uniqueForms = $.unique(
           $siblingElements.map(function() {
