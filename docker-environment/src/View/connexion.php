@@ -18,6 +18,7 @@
 </head>
 <body id="page-top">
 <!-- Navigation-->
+
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="https://i.ibb.co/7Rh7NNg/24b99a4eedf226ba.png" alt="cogip" border="0" /></a>
@@ -37,7 +38,7 @@
     </div>
 </nav>
 <!-- Masthead-->
-<header class="masthead">
+<header class="masthead login">
     <div class="container">
         <div class="masthead-heading text-uppercase">Welcome To The COGIP!</div>
     </div>
@@ -65,7 +66,7 @@
             </div>
             <div class="text-center">
                 <div id="success"></div>
-                <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Login</button>
+                <button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit" name="submit">Login</button>
                 <button class="btn btn-danger btn-xl text-uppercase"><a href="/index.php">Cancel</a></button>
             </div>
         </form>
