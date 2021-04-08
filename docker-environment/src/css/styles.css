@@ -10166,6 +10166,13 @@ header.masthead {
   background-position: center center;
   background-size: cover;
 }
+
+.login { 
+  background-image: url("../assets/img/login.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;}
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
