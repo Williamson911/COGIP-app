@@ -21,5 +21,5 @@
     </select>
     <br>
     <button type="submit" name="createNewContact">Submit</button>
-    <button><a href="/index.php?page=admin">Cancel</a></button>
+    <button><a href="/admin">Cancel</a></button>
 </form>

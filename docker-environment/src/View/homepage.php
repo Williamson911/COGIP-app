@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,13 +17,6 @@
     <link href="./css/styles.css" rel="stylesheet" />
 </head>
 <body id="page-top">
-=======
-<?php require 'includes/header.php' ?>
-<!-- this is the view, try to put only simple if's and loops here.
-Anything complex should be calculated in the model -->
-
-<section>
->>>>>>> origin/Charlotte
 
 <!-- Navigation-->
 <?php include($_SERVER['DOCUMENT_ROOT'] . '/View/includes/nav.php'); ?>
