@@ -1,10 +1,6 @@
 <?php
 declare(strict_types=1);
 session_start();
-var_dump($_SESSION);
-//  phpinfo();
-//  die();
-
 $url = '';
 if (isset($_GET['url'])) { //vérifier si mon url est vide sinon explode
     $url = explode('/', $_GET['url']); // definir le format de l'url

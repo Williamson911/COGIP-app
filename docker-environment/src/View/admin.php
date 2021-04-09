@@ -46,7 +46,7 @@ Anything complex should be calculated in the model -->
                                 <p><?php echo $invoice['Name'] ?></p><?php } ?>
                         </td>
                         <?php if ($_SESSION['role'] == 'Admin') : ?>
-                            <tdclass="pr-2">
+                            <td class="pr-2"> 
                             <?php foreach ($invoices->getInvoices() as $key => $invoice) { ?>
                                 <form action="" method="POST">
                                     <input type="hidden" name="id-invoice" value="<?= $invoice['InvoiceNumber'] ?>">
