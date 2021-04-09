@@ -6,14 +6,14 @@ if (isset($_GET['url'])) { //vérifier si mon url est vide sinon explode
     $url = explode('/', $_GET['url']); // definir le format de l'url
 }
 //include all your controllers here
-require 'Controller/HomepageController.php';
-require 'Controller/CompanyController.php';
-require 'Controller/InvoiceController.php';
-require 'Controller/ContactController.php';
-require 'Controller/ProvidersController.php';
-require 'Controller/ClientController.php';
-require 'Controller/ConnexionController.php';
-require 'Controller/AdminController.php';
+require './src/Controller/HomepageController.php';
+require './src/Controller/CompanyController.php';
+require './src/Controller/InvoiceController.php';
+require './src/Controller/ContactController.php';
+require './src/Controller/ProvidersController.php';
+require './src/Controller/ClientController.php';
+require './src/Controller/ConnexionController.php';
+require './src/Controller/AdminController.php';
 
 //Your index is your Router. You could write a simple IF here based on some $_GET or $_POST vars, to choose your controller
 
