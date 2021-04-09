@@ -5,6 +5,8 @@ $url = '';
 if (isset($_GET['url'])) { //vérifier si mon url est vide sinon explode
     $url = explode('/', $_GET['url']); // definir le format de l'url
 }
+
+echo "hello world";
 //include all your controllers here
 require './src/Controller/HomepageController.php';
 require './src/Controller/CompanyController.php';
