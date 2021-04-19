@@ -41,4 +41,4 @@ The app itself must include a companies page, an invoices page, a contact page a
 - Charlotte: creating the database, MVC structure, SQL requests, router, CRUD
 ## Deployed on Heroku:
 
-### [Here!]()
+### [Here!](https://cogip-app-20000.herokuapp.com/)
