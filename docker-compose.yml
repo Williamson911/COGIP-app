@@ -2,7 +2,6 @@
   version: "3"
   services: 
     php: 
-      # image: "becodeorg/php"
       build: "./"
       volumes: 
         - "./src:/var/www/html"

@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 session_start();
 $url = '';
@@ -6,7 +7,12 @@ if (isset($_GET['url'])) { //vérifier si mon url est vide sinon explode
     $url = explode('/', $_GET['url']); // definir le format de l'url
 }
 
-echo "hello world";
+if (file_exists(__DIR__ . '/.env')) {
+    require('vendor/autoload.php');
+    $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+    $dotenv->load();
+}
+
 //include all your controllers here
 require './src/Controller/HomepageController.php';
 require './src/Controller/CompanyController.php';
@@ -34,19 +40,19 @@ if (isset($url[0]) && $url[0] === 'companies') {
     $controller = new ClientController();
 } elseif (isset($url[0]) && $url[0] === 'login') {
     $controller = new ConnexionController();
-} elseif (isset($url[0]) && $url[0] ==='newcontact') {
+} elseif (isset($url[0]) && $url[0] === 'newcontact') {
     $controller = new AdminController();
-} elseif (isset($url[0]) && $url[0] ==='newcompany') {
+} elseif (isset($url[0]) && $url[0] === 'newcompany') {
     $controller = new AdminController();
-} elseif (isset($url[0]) && $url[0] ==='newinvoice') {
+} elseif (isset($url[0]) && $url[0] === 'newinvoice') {
     $controller = new AdminController();
-} elseif (isset($url[0]) && $url[0] ==='editcontact') {
+} elseif (isset($url[0]) && $url[0] === 'editcontact') {
     $controller = new AdminController();
-} elseif (isset($url[0]) && $url[0] ==='editcompany') {
+} elseif (isset($url[0]) && $url[0] === 'editcompany') {
     $controller = new AdminController();
-} elseif (isset($url[0]) && $url[0] ==='editinvoice') {
+} elseif (isset($url[0]) && $url[0] === 'editinvoice') {
     $controller = new AdminController();
-} elseif (isset($url[0]) && $url[0] ==='moderation') {
+} elseif (isset($url[0]) && $url[0] === 'moderation') {
     $controller = new AdminController();
 }
 error_reporting(E_ERROR);
