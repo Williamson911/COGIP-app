@@ -11,9 +11,16 @@
                 <li class="nav-item"><a class="nav-link" href="/invoices">Invoices</a></li>
                 <li class="nav-item"><a class="nav-link" href="/companies">Companies</a></li>
                 <li class="nav-item"><a class="nav-link" href="/contacts">Contacts</a></li>
-                <!-- <li class="nav-item"><a class="nav-link" href="/clients">Clients</a></li>
-                <li class="nav-item"><a class="nav-link" href="/providers">Providers</a></li> -->
-                <li class="nav-item"><a class="nav-link" href="/login">Connexion</a></li>
+
+                <?php if (!isset($_SESSION['username']) && !isset($_SESSION['userId']) && !isset($_SESSION['role'])) : ?>
+                    <li class="nav-item"><a class="nav-link" href="/login">Connexion</a></li>
+                <?php endif ?>
+                <?php if (isset($_SESSION['username']) && isset($_SESSION['userId']) && isset($_SESSION['role'])) : ?>
+                    <li class="nav-item"><a class="nav-link" href="/login">Admin</a></li>
+                    <form action="" method="POST">
+                        <button class="btn btn-danger btn-s text-uppercase" type="submit" name="deconnexion">Log out</button>
+                    </form>
+                <?php endif ?>
             </ul>
         </div>
     </div>
