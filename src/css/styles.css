@@ -10173,6 +10173,15 @@ header.masthead {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;}
+
+.admin {
+  background-image: url("../assets/img/admin.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;}
+
+
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
   font-style: italic;
