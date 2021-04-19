@@ -1,6 +1,6 @@
 # COGIP-app
 
-This was a group project (made with [William](https://github.com/Williamson911) and [Samantha](https://github.com/Samantha-35)) carried out from the 05<sup>th</sup> to the 19<sup>th</sup> of April 2021 (including one week off) as part of the BeCode Liège's Junior Web Developer programm. We were tasked to make an accounting website for the ~~very well known~~ [COGIP](https://www.youtube.com/watch?v=15fqMAO76S8) company. The database must include data relating to people, companies and invoices which should be related as folow:
+This was a group project (made with [Charlotte](https://github.com/CharlotteMoureau) and [Samantha](https://github.com/Samantha-35)) carried out from the 05<sup>th</sup> to the 19<sup>th</sup> of April 2021 (including one week off) as part of the BeCode Liège's Junior Web Developer programm. We were tasked to make an accounting website for the ~~very well known~~ [COGIP](https://www.youtube.com/watch?v=15fqMAO76S8) company. The database must include data relating to people, companies and invoices which should be related as folow:
 
 - Company --- type
 - Company --- invoice
