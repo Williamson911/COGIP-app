@@ -2,16 +2,20 @@
 
 declare(strict_types=1);
 
-require 'environment.php';
-
-
 class Manager
-{ $user = getenv('USER');
-$password = getenv('PASSWORD');
+{
 	protected function connectDb()
 	{
 		try {
-			$db = new PDO("mysql:host=remotemysql.com;dbname=S4vXv3ajmJ;port=3306", $user, $password);
+			if (file_exists(__DIR__ . '/../.env')) {
+				$dbUsername = $_ENV['DB_NAME'];
+				$dbPassword = $_ENV['DB_PASSWORD'];
+			} else {
+				$dbUsername = getenv('DB_NAME');
+				$dbPassword = getenv('DB_PASSWORD');
+			}
+
+			$db = new PDO("mysql:host=remotemysql.com;dbname=$dbUsername;port=3306", "$dbUsername", "$dbPassword");
 			$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 			return $db;
 		} catch (Exception $e) {
